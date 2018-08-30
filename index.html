@@ -1,0 +1,148 @@
+<html>
+    <style>
+        html, body {
+            background-color: #ff7526;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        a {
+            color: initial;
+            text-decoration: initial;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            box-shadow: 0px 0px 35px rgba(0,0,0,0.3);
+            transition: 0.5s;
+        }
+        .box:hover {
+            box-shadow: 5px 5px 60px rgba(0,0,0,0.4);
+            transform: translate(-5px, -5px);
+        }
+
+        .box .top {
+            height: 330px;
+            position: relative;
+            background-image: url('https://booking.parisinfo.com/InfoliveImages/n015031.jpg?mode=crop&width=640&height=412&scale=both');
+            background-size: cover;
+            background-position: center top;
+        }
+
+        .box .top .tag {
+            width: 25px;
+            height: 50px;
+            background-color: #ff7526;
+            float: right;
+            margin-right: 20px;
+        }
+
+        .box .top .name {
+            position: absolute;
+            margin: 0;
+            left: 0;
+            bottom: 0;
+            padding: 5px 15px;
+            letter-spacing: 1.5px;
+            color: #ffff;
+            background: linear-gradient(transparent, black);
+            width: 100%;
+            box-sizing: border-box;
+            padding-top: 30px;
+            padding-bottom: 15px;
+        }
+
+        .box .top .name .sm-text{
+            font-size: 14px;
+        }
+
+        .box .top .cir-btn {
+            width: 50px;
+            height: 50px;
+            background-color: #ff7526;
+            border-radius: 50%;
+            position: absolute;
+            right: 30px;
+            bottom: -20px;
+        }
+
+        .bottom {
+            padding: 10px 20px 20px 20px;
+        }
+        .bottom ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .bottom h3 {
+            display: inline-block;
+            margin: 0;
+        }
+        .bottom li {
+            padding: 5px 0px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+        .buttons .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            letter-spacing: 1.5px;
+        }
+        .buttons .btn-web {
+            background-color: #ff7526;
+            transition: 0.5s;
+        }
+        .buttons .btn-web:hover {
+            background-color: #ff9156;
+        }
+        .buttons .btn-news {
+            background-color: #fff;
+            border: solid 1px #ccc;
+            float: right;
+            transition: 0.5s;
+        }
+        .buttons .btn-news:hover {
+            background-color: #eee;
+        }
+    </style>
+    <body>
+        <div class="box">
+            <div class="top">
+                <h2 class="name">
+                Disneyland
+                <span class="sm-text">Tokyo</span>
+                </h2>
+                <div class="tag"></div>
+                <div class="cir-btn"></div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <h3>Visit Date: </h3>
+                        2018-04-16
+                    </li>
+                    <li>
+                        <h3>Weather: </h3>
+                        Cloudy
+                    </li>
+                    <li>
+                        <h3>Note:</h3>
+                        That's wonderful place.
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <a class="btn btn-web" href="https://www.tokyodisneyresort.jp/en/tdl/access" target="_blank">Go Disneyland</a>
+                    <a class="btn btn-news" href="https://www.tokyodisneyresort.jp/" target="_blank">More Information</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
